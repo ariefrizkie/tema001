@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+    --color1: rgb(229, 219, 205);
+    --color2: rgb(200, 212, 206);
+    --color3: rgb(253, 250, 244);
+    --color4: rgb(205, 175, 82);
+    --color5: rgb(73, 73, 73);
+    --montserrat: 'Montserrat', sans-serif;
+    --scramento: 'Sacramento', 'montserrat', sans-serif;
+    --greatVibes: 'Great Vibes', 'montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+    /* border: solid 1px red; */
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--color4);
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar .logo {
+    width: 35%;
+}
+
+.navbar .logo .navLogo {
+    font-size: 24px;
+    margin: 15px 0;
+    font-family: var(--scramento);
+    color: var(--color3);
+}
+
+.navbar .menu {
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+}
+
+.navbar .menu a {
+    color: var(--color3);
+    text-decoration: none;
+    font-family: var(--montserrat);
+    font-weight: 500;
+}
+
+.navbar .menu a:hover {
+    font-weight:700;
+    color: var(--color2);
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    background-image: url('img/header2.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+#header .undangan {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--color3);
+}
+
+#header .undangan .titleUndangan {
+    font-size: 2em;
+
+}
+
+#header .undangan .namaMempelai {
+    font-family: var(--greatVibes);
+    font-size: 5em;
+    margin: 15px 0;
+}
+
+#header .undangan .tanggal {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#header .diundang {
+    text-align: center;
+    
+}
+
+#header .to,
+#header .kepada {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#header .svg1 {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 250px;
+}
+
+#header .svg2 {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 170px;
+}
+
+#mempelai {
+    text-align: center;
+    background-color: var(--color3);
+    padding: 100px 0;
+    color: var(--color5);
+}
+
+.greeting {
+    margin-bottom: 50px;
+    font-family: var(--scramento);
+    font-size: 3em;
+    text-align: center;
+    color: var(--color5);
+}
+
+#mempelai .namaMempelai {
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#mempelai .namaMempelai .mempelaiWanita,
+#mempelai .namaMempelai .mempelaiPria {
+    width: 40%;
+}
+
+.namaMempelai .foto {
+    width: 230px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.namaMempelai .nama {
+    font-family: var(--greatVibes);
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.namaMempelai .dan {
+    font-size: 5em;
+    font-family: var(--greatVibes);
+}
+
+.namaMempelai .dari {
+    margin-bottom: 15px;
+
+}
+
+.namaMempelai .ortu {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+#mempelai .hiasan3 {
+    position: relative;
+    bottom: -100px;
+    right: 50vw;
+    transform: translateX(100%);
+    width: 180px;
+}
+
+#mempelai .hiasan4 {
+    position: relative;
+    bottom: -100px;
+    left: 50vw;
+    transform: translateX(-110%);
+    width: 180px;
+}
+
+#galeri {
+    text-align: center;
+    padding: 100px 0;
+    background-color: var(--color1);
+}
+
+#galeri .galeriItem {
+    width: 300px;
+    border-radius: 5px;
+}
+
+#galeri .galeriBersama {
+    width: 100%;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 25px;
+}
+
+#tglUndangan {
+    padding: 100px 0;
+    text-align: center;
+    background-color: white;
+}
+
+#tglUndangan .batas {
+    width: 60%;
+    margin: auto;
+}
+
+#tglUndangan .nama {
+    font-family: var(--greatVibes);
+    font-size: 2em;
+    color: var(--color4);
+}
+
+#tglUndangan .jadwal {
+    width: 100%;
+    justify-content: center;
+    margin: 50px auto;
+    gap: 70px;
+}
+
+#tglUndangan .salam {
+    font-family: var(--greatVibes);
+    font-size: 2.1em;
+    margin-bottom: 30px;
+    color: var(--color4);
+}
+
+#tglUndangan .jadwal h4 {
+    margin: 30px 0 15px;
+    color: var(--color4);
+    font-size: 1.2em;
+}
+
+#tglUndangan .jadwal .isi {
+    font-size: 1.4em;
+    color: var(--color5);
+    font-weight: 600;
+}
+
+#tglUndangan .akad {
+    width: 35%;
+}
+
+#tglUndangan .resepsi {
+    width: 35%;
+}
+
+#hitungMundur {
+    padding: 100px 0;
+    
+    background-image: url('img/wedding2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--color5 
+ );
+}
+
+#hitungMundur .countdown {
+    width: 70%;
+    justify-content: space-around;
+    margin: auto;
+    font-family: var(--scramento);
+    font-size: 4.5em;
+    border-radius: 10px;
+    padding: 25px 0;
+}
+
+#hitungMundur .bg {
+    background-color: rgba(229, 219, 205,0.6);
+}
+
+#hitungMundur .waktu {
+    min-width: 140px;
+    padding: 10px 15px;
+    background-color: var(--color1);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#hitungMundur .angka {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-family: var(--montserrat);
+}
+
+#hitungMundur .nama {
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: var(--montserrat);
+}
+
+#cerita {
+    padding: 100px 0;
+    background-image: url('img/paper-texture.jpg');
+}
+
+#cerita .kisahKami {
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.kisahKami .ceritaberdua {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.kisahKami .fotoCerita {
+    width: 350px;
+}
+
+.kisahKami .penjelasan {
+    padding: 30px 20px;
+    background-color: var(--color2);
+    width: 55%;
+    color: var(--color5);
+}
+
+.kanan {
+    justify-content: end;
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+#komentar {
+    padding: 100px 0;
+    background-color: white;
+}
+
+#komentar .formReservasi {
+    width: 70%;
+    margin: auto;
+}
+
+#komentar label {
+    font-size: 1em;
+    color: var(--color5);
+    font-weight: 600;
+}
+
+#komentar .form-kehadiran {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+#komentar input {
+    padding: 15px 5px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--color5);
+}
+
+#komentar input::placeholder {
+    font-weight: 600;
+}
+
+#komentar .form-kehadiran .radioButton {
+    gap: 10px;
+    align-items: center;
+}
+
+#komentar .form-kehadiran .button[type=submit] {
+    background-color: var(--color5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#komentar .form-kehadiran .button[type=submit]:hover {
+    font-weight: 700;
+}
+
+#komentar .ucapanDoa {
+    height: 100px;
+    padding: 15px 5px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--color5);
+}
+
+#komentar .ucapanDoa::placeholder {
+    font-weight: 600;
+}
+
+#komentar .daftarUcapan {
+    height: 350px;
+    padding: 15px;
+    margin: 30px auto;
+    color: var(--color5);
+    width: 70%;
+    overflow: auto;
+}
+
+#komentar .daftarUcapan::-webkit-scrollbar {
+    background: white;
+}
+#komentar .daftarUcapan::-webkit-scrollbar-thumb {
+    background: var(--color4);
+    border-radius: 5px;
+}
+
+#komentar .daftarUcapan .ucapannya {
+    background-color: var(--color4);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#komentar .ucapannya .nama {
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+#komentar .ucapannya .nmrwa {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+#komentar .ucapannya .absen {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+#komentar .ucapannya .textUcapan {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+#protokol p {
+    text-align: center;
+    font-size: 1,3em;
+}
+
+#protokol .prokes {
+    grid-template-columns: repeat(5, 15%);
+    justify-content: center;
+    gap: 25px;
+    width: 70%;
+    margin: 25px auto;
+}
+
+#protokol .icon {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#protokol .prokes img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+#berbahagia {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color3);
+}
+
+#berbahagia .inisial {
+    width: 300px;
+    height: 300px;
+    background-image: url("assetssvg/hiasan 3 bulat.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+#berbahagia .inisial .terimakasih {
+    position: relative;
+    top: 190px;
+    left: 150px;
+    font-family: var(--greatVibes);
+    font-size: 3.3em;
+    transform: translate(-50%, -50%);
+    color: var(--color5);
+}
+
+#berbahagia .namaberbahagia {
+    color: var(--color5);
+    margin-top: 50px;
+    font-family: var(--greatVibes);
+    font-size: 2em;
+}
+
+footer {
+    background-color: var(--color2);
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar .menu {
+        position: fixed;
+        justify-content: space-around;
+        bottom: 0;
+        left: 0;
+        background-color: var(--color4);
+        padding: 30px 25px;
+        width: 100vw;
+        
+    }
+
+    .navbar i {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .navbar .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header .undangan .titleUndangan,
+    #header .undangan .tanggal {
+        font-size: 1.5em;
+    }
+
+    #header .diundang {
+        padding: 20px;
+        background-color: rgba(73, 73, 73, 0.7);
+        border-radius: 15px;
+    }
+
+    #header .undangan .namaMempelai {
+        font-size: 4em;
+    }
+
+    .namaMempelai .foto {
+        width: 170px;
+    }
+    
+    .namaMempelai .nama {
+        font-size: 2.2em;
+    }
+
+    .namaMempelai .ortu {
+        font-size: 1.2em;
+    }
+
+    .namaMempelai .dan {
+        font-size: 3em;
+    }
+
+    #galeri .galeriBersama {
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    #tglUndangan .batas {
+        width: 90%;
+    }
+
+    #tglUndangan .jadwal .isi {
+        font-size: 1.1em;
+    }
+
+    #hitungMundur .countdown {
+        width: 85%;
+        font-size: 3.5em;
+    }
+
+    #hitungMundur .angka {
+        font-size: 3.5rem;
+    }
+
+    #cerita .kisahKami {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kisahKami .ceritaberdua {
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .kisahKami .fotoCerita {
+        width: 80%;
+    }
+
+    #komentar .formReservasi {
+        width: 80%;
+    }
+
+    .kisahKami .penjelasan {
+        width: 80%;
+    }
+
+    #komentar .daftarUcapan {
+        width: 85%;
+    }
+
+    #komentar .ucapannya .nama {
+        font-size: 1.3em;
+    }
+
+    footer {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .navbar .menu {
+        
+        padding: 15px 10px 25px 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    #header .undangan .titleUndangan,
+    #header .undangan .tanggal {
+        font-size: 1.4em;
+    }
+
+    #header .undangan .namaMempelai {
+        font-size: 2.5em;
+    }
+
+    #header .undangan .to {
+        font-size: 1.7em;
+    }
+
+    #header .undangan .kepada {
+        font-size: 1.7em;
+        color: var(--color2);
+    }
+
+    #mempelai .namaMempelai {
+        flex-direction: column;
+    }
+
+    .namaMempelai .foto {
+        width: 200px;
+    }
+
+    #mempelai .namaMempelai .mempelaiWanita,
+    #mempelai .namaMempelai .mempelaiPria {
+        width: 70%;
+    }
+
+    #mempelai .hiasan3 {
+        width: 150px;
+    }
+
+    #mempelai .hiasan4 {
+        width: 150px;
+        transform: translateX(-100%);
+    }
+
+    #galeri .galeriBersama {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    #tglUndangan .jadwal {
+        flex-direction: column;
+    }
+
+    #tglUndangan .akad,
+    #tglUndangan .resepsi {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #hitungMundur .countdown {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #hitungMundur .waktu {
+        width: 50px;
+        margin: auto;
+    }
+
+    .kisahKami .fotoCerita {
+        width: 100%;
+    }
+
+    .kisahKami .penjelasan {
+        width: 100%;
+        text-align: center;
+    }
+    
+
+    #protokol .prokes {
+        grid-template-columns: repeat(2, 40%);
+        gap: 10px;
+        width: 100%;
+    }
+
+    footer {
+        margin-bottom: 80px;
+    }
+}
+

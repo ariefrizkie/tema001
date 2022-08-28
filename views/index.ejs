@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siti meet Fahri</title>
+    <script
+      src="https://kit.fontawesome.com/33d007b743.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container flex">
+        <div class="logo">
+          <h2 class="navLogo">Siti & Fahri</h2>
+        </div>
+        <div class="menu flex">
+          <a href="#header" class="listMenu">Undangan</a>
+          <a href="#mempelai" class="listMenu">Mempelai</a>
+          <a href="#galeri" class="listMenu">Galeri</a>
+          <a href="#cerita" class="listMenu">Story</a>
+          <a href="#komentar" class="listMenu">Ucapan</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="header">
+        <div class="container undangan flex">
+          <h2 class="titleUndangan">The Wedding</h2>
+          <h1 class="namaMempelai">Siti Sulastri & M. Fahri</h1>
+          <h3 class="tanggal">24 Agustus 2024</h3>
+          <div class="diundang">
+            <p class="to">Kepada Yth :</p>
+            <p class="kepada"><%= nama %></p>
+          </div>
+          <img src="assetssvg/hiasan 1.svg" class="svg1" />
+          <img src="assetssvg/hiasan 2.svg" class="svg2" />
+        </div>
+      </section>
+      <section id="mempelai">
+        <div class="container">
+          <h2 class="greeting">Kami yang berbahagia</h2>
+          <div class="namaMempelai flex">
+            <div class="mempelaiWanita">
+              <img src="img/girl.jpg" alt="mempelai wanita" class="foto" />
+              <h3 class="nama">Siti Sulastri</h3>
+              <p class="dari">Putri dari</p>
+              <p class="ortu">Bpk. Susanto</p>
+              <p class="ortu">Ibu Sri Susanti</p>
+            </div>
+            <h3 class="dan">&</h3>
+            <div class="mempelaiPria">
+              <img src="img/man.jpg" alt="mempelai pria" class="foto" />
+              <h3 class="nama">Muhammad Fahri</h3>
+              <p class="dari">Putra dari</p>
+              <p class="ortu">Bpk. Harsono Yudho</p>
+              <p class="ortu">Ibu Heni Wulandari</p>
+            </div>
+          </div>
+        </div>
+        <img src="assetssvg/hiasan 4.svg" class="hiasan3" />
+        <img src="assetssvg/hiasan 5.svg" class="hiasan4" />
+      </section>
+      <section id="galeri">
+        <div class="container">
+          <h2 class="greeting">Galeri</h2>
+          <div class="galeriBersama grid">
+            <img src="img/galeri 1.jpg" class="galeriItem foto1" />
+            <img src="img/galeri 2.jpg" class="galeriItem" />
+            <img src="img/galeri 3.jpg" class="galeriItem" />
+            <img src="img/galeri 4.jpg" class="galeriItem" />
+            <img src="img/galeri 5.jpg" class="galeriItem" />
+            <img src="img/galeri 6.jpg" class="galeriItem" />
+            <img src="img/galeri 7.jpg" class="galeriItem" />
+            <img src="img/galeri 8.jpg" class="galeriItem" />
+            <img src="img/galeri 9.jpg" class="galeriItem" />
+            <img src="img/galeri 10.jpg" class="galeriItem foto10" />
+          </div>
+        </div>
+      </section>
+      <section id="tglUndangan">
+        <div class="container">
+          <div class="batas">
+            <h2 class="greeting">Jadwal Pernikahan</h2>
+            <h3 class="salam">Assalamualaikum Warahmatullahi Wabarokatuh</h3>
+            <p class="start">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+              odit molestiae magni assumenda ipsum. Enim illo quibusdam
+              voluptatum assumenda architecto.
+            </p>
+            <div class="jadwal flex">
+              <div class="akad">
+                <h3 class="nama">Akad Nikah</h3>
+                <h4 class="tanggal">Hari & Tanggal</h4>
+                <p class="isi">Kamis, 21 Agustus 2024</p>
+                <h4 class="waktu">Waktu</h4>
+                <p class="isi">07.00 - Selesai</p>
+                <h4 class="lokasi">Lokasi</h4>
+                <p class="isi">Gedung Pinggir Sungai</p>
+              </div>
+              <div class="resepsi">
+                <h3 class="nama">Resepsi Pernikahan</h3>
+                <h4 class="tanggal">Hari & Tanggal</h4>
+                <p class="isi">Minggu, 24 Agustus 2024</p>
+                <h4 class="waktu">Waktu</h4>
+                <p class="isi">08.00 - Selesai</p>
+                <h4 class="lokasi">Lokasi</h4>
+                <p class="isi">Gedung Pinggir Sungai</p>
+              </div>
+            </div>
+            <p class="penutup">
+              Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila
+              Bapak/Ibu/Saudara/i berkenan hadir untuk memberika do'a restu
+              kepada kedua mempelai
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="hitungMundur">
+        <div class="container">
+          <div class="countdown flex">
+            <div class="waktu">
+              <h1 class="angka hari">0</h1>
+              <p class="nama">Hari</p>
+            </div>
+            <div class="waktu">
+              <h1 class="angka jam">0</h1>
+              <p class="nama">Jam</p>
+            </div>
+            <div class="waktu">
+              <h1 class="angka menit">0</h1>
+              <p class="nama">Menit</p>
+            </div>
+            <div class="waktu">
+              <h1 class="angka detik">0</h1>
+              <p class="nama">Detik</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cerita">
+        <div class="container">
+          <h2 class="greeting">Cerita Berdua</h2>
+          <div class="kisahKami flex">
+            <div class="ceritaberdua flex">
+              <img src="img/cerita1.jpg" alt="Cerita kami" class="fotoCerita" />
+              <div class="penjelasan">
+                <h3 class="Pertemuan">Pertemuan pertama</h3>
+                <p class="keterangan">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id
+                  distinctio inventore recusandae consectetur, odit amet
+                  voluptate! Consequuntur, consectetur quod! Soluta quaerat
+                  nostrum perferendis quis sequi quam ad blanditiis distinctio
+                  possimus, ab laudantium ullam quas temporibus facere assumenda
+                  incidunt a, dicta officiis qui! Qui, illo pariatur ad
+                  consequuntur cupiditate ea!
+                </p>
+              </div>
+            </div>
+            <div class="ceritaberdua kanan flex">
+              <img src="img/cerita2.jpg" alt="Cerita kami" class="fotoCerita" />
+              <div class="penjelasan">
+                <h3 class="Pertemuan">Pertemuan pertama</h3>
+                <p class="keterangan">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id
+                  distinctio inventore recusandae consectetur, odit amet
+                  voluptate! Consequuntur, consectetur quod! Soluta quaerat
+                  nostrum perferendis quis sequi quam ad blanditiis distinctio
+                  possimus, ab laudantium ullam quas temporibus facere assumenda
+                  incidunt a, dicta officiis qui! Qui, illo pariatur ad
+                  consequuntur cupiditate ea!
+                </p>
+              </div>
+            </div>
+            <div class="ceritaberdua flex">
+              <img src="img/cerita3.jpg" alt="Cerita kami" class="fotoCerita" />
+              <div class="penjelasan">
+                <h3 class="Pertemuan">Pertemuan pertama</h3>
+                <p class="keterangan">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id
+                  distinctio inventore recusandae consectetur, odit amet
+                  voluptate! Consequuntur, consectetur quod! Soluta quaerat
+                  nostrum perferendis quis sequi quam ad blanditiis distinctio
+                  possimus, ab laudantium ullam quas temporibus facere assumenda
+                  incidunt a, dicta officiis qui! Qui, illo pariatur ad
+                  consequuntur cupiditate ea!
+                </p>
+              </div>
+            </div>
+            <div class="ceritaberdua kanan flex">
+              <img src="img/cerita4.jpg" alt="Cerita kami" class="fotoCerita" />
+              <div class="penjelasan">
+                <h3 class="Pertemuan">Pertemuan pertama</h3>
+                <p class="keterangan">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id
+                  distinctio inventore recusandae consectetur, odit amet
+                  voluptate! Consequuntur, consectetur quod! Soluta quaerat
+                  nostrum perferendis quis sequi quam ad blanditiis distinctio
+                  possimus, ab laudantium ullam quas temporibus facere assumenda
+                  incidunt a, dicta officiis qui! Qui, illo pariatur ad
+                  consequuntur cupiditate ea!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="komentar">
+        <div class="container">
+          <h2 class="greeting">Kehadiran</h2>
+          <div class="formReservasi">
+            <form
+              action="/add"
+              method="post"
+              class="form-kehadiran flex"
+              autocomplete="off"
+            >
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                placeholder="Nama"
+                required
+              />
+              <input
+                type="tel"
+                name="telp"
+                id="telp"
+                pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"
+                placeholder="Telp/WA"
+              />
+              <div class="radioButton flex">
+                <input type="radio" name="kehadiran" id="hadir" value="Hadir" />
+                <label for="hadir">Saya akan hadir</label>
+              </div>
+              <div class="radioButton flex">
+                <input
+                  type="radio"
+                  name="kehadiran"
+                  id="tdkHadir"
+                  value="Tidak Hadir"
+                />
+                <label for="tdkHadir">Saya tidak bisa hadir</label>
+              </div>
+              <textarea
+                type="text"
+                name="ucapan"
+                id="ucapan"
+                class="ucapanDoa"
+                placeholder="Ucapan anda"
+              ></textarea>
+              <input type="submit" value="Kirim Ucapan" class="button" />
+            </form>
+          </div>
+          <div class="komentar">
+            <h2 class="greeting">Ucapan untuk Mempelai</h2>
+            <div class="daftarUcapan">
+              <% coments.forEach(coment => { %>
+              <div class="ucapannya">
+                <h3 class="nama"><%= coment.nama %></h3>
+                <h3 class="nmrwa"><%= coment.telp %></h3>
+                <h3 class="absen"><%= coment.kehadiran %></h3>
+                <p class="textUcapan"><%= coment.ucapan %></p>
+              </div>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="protokol">
+        <div class="container">
+          <h2 class="greeting">Protokol Kesehatan</h2>
+          <p>
+            Ikutilah protokol kesehatan yang berlaku dan semoga kita selalu
+            diberikan kesehatan
+          </p>
+          <div class="prokes grid">
+            <div class="icon">
+              <img src="assetssvg/Menggunakan masker.svg" />
+              <p>Menggunakan Masker</p>
+            </div>
+            <div class="icon">
+              <img src="assetssvg/menjaga jarak.svg" />
+              <p>Menjaga Jarak</p>
+            </div>
+            <div class="icon">
+              <img src="assetssvg/mencuci tangan.svg" />
+              <p>Mencuci Tangan</p>
+            </div>
+            <div class="icon">
+              <img src="assetssvg/bersentuhan fisik.svg" />
+              <p>Kurangi Kontak Fisik</p>
+            </div>
+            <div class="icon">
+              <img src="assetssvg/sesuai jadwal.svg" />
+              <p>Datang Sesuai Jadwal</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="berbahagia">
+        <div class="container">
+          <div class="inisial">
+            <h1 class="terimakasih">S & F</h1>
+          </div>
+          <h2 class="namaberbahagia">Siti Sulastri & Muhammad Fahri</h2>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="copyright">Copyright Foton Invitation</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
