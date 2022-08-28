@@ -48,7 +48,7 @@ db.connect((err) => {
 
 
 
-// app.listen(3000, () => {
-//     console.log('server ready....');
-// });
-app.listen();
+app.listen(3000, () => {
+    console.log('server ready....');
+});
+// app.listen();
