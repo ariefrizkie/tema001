@@ -1,3 +1,4 @@
+
 function tanggalAcara() {
 
   // Set the date we're counting down to
@@ -60,3 +61,15 @@ function rubahMenu() {
 }
 
 rubahMenu();
+
+const bukaUndangan = () =>  {
+  const tombolBuka = document.querySelector('.bukaUndangan');
+  const awal = document.querySelector('.awal');
+  
+
+  tombolBuka.addEventListener("click", function() {
+    awal.classList.add("close");
+  });
+}
+
+bukaUndangan();

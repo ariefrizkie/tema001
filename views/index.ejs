@@ -10,8 +10,19 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="awal">
+      <div class="tamu flex">
+        <p>Hallo</p>
+        <p class="namaTamu"><%= nama %></p>
+        <p>Kami Mengundang Anda ke Acara Pernikahan Kami</p>
+        <h1>Siti & Fahri</h1>
+        <p>24 Agustus 2024</p>
+        <button class="bukaUndangan">Buka Undangan</button>
+      </div>
+    </div>
     <nav class="navbar">
       <div class="container flex">
         <div class="logo">
@@ -45,7 +56,14 @@
           <h2 class="greeting">Kami yang berbahagia</h2>
           <div class="namaMempelai flex">
             <div class="mempelaiWanita">
-              <img src="img/girl.jpg" alt="mempelai wanita" class="foto" />
+              <img
+                src="img/girl.jpg"
+                data-aos="fade-up"
+                data-aos-offset="100"
+                ata-aos-duration="1000"
+                alt="mempelai wanita"
+                class="foto"
+              />
               <h3 class="nama">Siti Sulastri</h3>
               <p class="dari">Putri dari</p>
               <p class="ortu">Bpk. Susanto</p>
@@ -53,7 +71,14 @@
             </div>
             <h3 class="dan">&</h3>
             <div class="mempelaiPria">
-              <img src="img/man.jpg" alt="mempelai pria" class="foto" />
+              <img
+                src="img/man.jpg"
+                data-aos="fade-up"
+                data-aos-offset="100"
+                ata-aos-duration="1000"
+                alt="mempelai pria"
+                class="foto"
+              />
               <h3 class="nama">Muhammad Fahri</h3>
               <p class="dari">Putra dari</p>
               <p class="ortu">Bpk. Harsono Yudho</p>
@@ -61,23 +86,93 @@
             </div>
           </div>
         </div>
-        <img src="assetssvg/hiasan 4.svg" class="hiasan3" />
-        <img src="assetssvg/hiasan 5.svg" class="hiasan4" />
+        <img
+          src="assetssvg/hiasan 4.svg"
+          data-aos="fade-up"
+          data-aos-offset="100"
+          ata-aos-duration="1000"
+          class="hiasan3"
+        />
+        <img
+          src="assetssvg/hiasan 5.svg"
+          data-aos="fade-up"
+          class="hiasan4"
+          data-aos="fade-up"
+        />
       </section>
       <section id="galeri">
         <div class="container">
           <h2 class="greeting">Galeri</h2>
           <div class="galeriBersama grid">
-            <img src="img/galeri 1.jpg" class="galeriItem foto1" />
-            <img src="img/galeri 2.jpg" class="galeriItem" />
-            <img src="img/galeri 3.jpg" class="galeriItem" />
-            <img src="img/galeri 4.jpg" class="galeriItem" />
-            <img src="img/galeri 5.jpg" class="galeriItem" />
-            <img src="img/galeri 6.jpg" class="galeriItem" />
-            <img src="img/galeri 7.jpg" class="galeriItem" />
-            <img src="img/galeri 8.jpg" class="galeriItem" />
-            <img src="img/galeri 9.jpg" class="galeriItem" />
-            <img src="img/galeri 10.jpg" class="galeriItem foto10" />
+            <img
+              src="img/galeri 1.jpg"
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              class="galeriItem foto1"
+            />
+            <img
+              src="img/galeri 2.jpg"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              class="galeriItem"
+            />
+            <img
+              src="img/galeri 3.jpg"
+              data-aos="fade-up"
+              data-aos-offset="150"
+              data-aos-duration="1000"
+              class="galeriItem"
+            />
+            <img
+              src="img/galeri 4.jpg"
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              class="galeriItem"
+            />
+            <img
+              src="img/galeri 5.jpg"
+              data-aos="fade-up"
+              data-aos-offset="150"
+              data-aos-duration="1000"
+              class="galeriItem"
+            />
+            <img
+              src="img/galeri 6.jpg"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              class="galeriItem"
+            />
+            <img
+              src="img/galeri 7.jpg"
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              class="galeriItem"
+            />
+            <img
+              src="img/galeri 8.jpg"
+              data-aos="fade-up"
+              data-aos-offset="150"
+              data-aos-duration="1000"
+              class="galeriItem"
+            />
+            <img
+              src="img/galeri 9.jpg"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              class="galeriItem"
+            />
+            <img
+              src="img/galeri 10.jpg"
+              data-aos="fade-up"
+              data-aos-offset="100"
+              class="galeriItem foto10"
+            />
           </div>
         </div>
       </section>
@@ -146,7 +241,14 @@
           <h2 class="greeting">Cerita Berdua</h2>
           <div class="kisahKami flex">
             <div class="ceritaberdua flex">
-              <img src="img/cerita1.jpg" alt="Cerita kami" class="fotoCerita" />
+              <img
+                src="img/cerita1.jpg"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                ata-aos-duration="1000"
+                alt="Cerita kami"
+                class="fotoCerita"
+              />
               <div class="penjelasan">
                 <h3 class="Pertemuan">Pertemuan pertama</h3>
                 <p class="keterangan">
@@ -161,7 +263,14 @@
               </div>
             </div>
             <div class="ceritaberdua kanan flex">
-              <img src="img/cerita2.jpg" alt="Cerita kami" class="fotoCerita" />
+              <img
+                src="img/cerita2.jpg"
+                data-aos="fade-left"
+                data-aos-offset="200"
+                ata-aos-duration="1000"
+                alt="Cerita kami"
+                class="fotoCerita"
+              />
               <div class="penjelasan">
                 <h3 class="Pertemuan">Pertemuan pertama</h3>
                 <p class="keterangan">
@@ -176,7 +285,14 @@
               </div>
             </div>
             <div class="ceritaberdua flex">
-              <img src="img/cerita3.jpg" alt="Cerita kami" class="fotoCerita" />
+              <img
+                src="img/cerita3.jpg"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                ata-aos-duration="1000"
+                alt="Cerita kami"
+                class="fotoCerita"
+              />
               <div class="penjelasan">
                 <h3 class="Pertemuan">Pertemuan pertama</h3>
                 <p class="keterangan">
@@ -191,7 +307,14 @@
               </div>
             </div>
             <div class="ceritaberdua kanan flex">
-              <img src="img/cerita4.jpg" alt="Cerita kami" class="fotoCerita" />
+              <img
+                src="img/cerita4.jpg"
+                data-aos="fade-left"
+                data-aos-offset="200"
+                ata-aos-duration="1000"
+                alt="Cerita kami"
+                class="fotoCerita"
+              />
               <div class="penjelasan">
                 <h3 class="Pertemuan">Pertemuan pertama</h3>
                 <p class="keterangan">
@@ -316,5 +439,13 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animated",
+      });
+    </script>
   </body>
 </html>
